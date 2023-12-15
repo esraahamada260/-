@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #88AB8E;
+    color: #F2F1EB;
+    padding: 10px;
+    border-radius: 20px;
+}
+.profile-circle {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-circle img{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.head{
+    margin-right: 500px;
+    display: inline-block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 6px;
+}
+nav ul li a {
+    color: #EEE7DA;
+    text-decoration: none;
+    font-size: 18 px;
+    font-weight: 500;
+}
+nav ul li a:hover{
+    color: #527853;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile {
+    text-align: center;
+    color: #375237;
+    font-size: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-circle">
+            <a href="profile.html" ><img src="profile.png" alt="profile pcture" title="profile"></a>
+            
+            
+        </div>
+        <div class="head">
+        <h4>First name</h4><h4>Last name</h4>
+        </div>
+        <div class="content">
+            <nav>
+                <ul>
+                    <li><a href="#">Favorite</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Report a problem</a></li>
+                </ul>
+            </nav></div>
+    </header>
+
+    <main>
+        <div class="profile">
+         
+            <p>No items added to favorite</p>
+        </div>
+    </main>
+
+</body>
+</html>

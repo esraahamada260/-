@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+       font-family: sans-serif;
+       margin: 0;
+       padding: 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+       background-color: #F2F1EB;
+       color: #527853;
+}
+    
+    .login-container {
+        background-color: #AFC8AD;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #EE7214;
+        text-align: center;
+    }
+    
+    .login-container .log{
+        font-weight: 800;
+    color: #F2F1EB;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    label {
+    margin-bottom: 8px;
+    color: #527853;
+    font-weight: 700;
+    }
+    
+    input {
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color:#F2F1EB ;
+    border-radius: 10px;
+    border: #527853;
+
+    }
+    
+    button {
+    background-color: #EE7214;
+    color: #EEE7DA;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 20px;
+    }</style>
+    <script>
+        function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    // يمكنك قام بتحقق من اسم المستخدم وكلمة المرور هنا
+    // هذا المثال بسيط ولا يتم التحقق الفعلي
+
+    if (username === "user" && password === "pass") {
+        alert("تم تسجيل الدخول بنجاح!");
+        // يمكنك توجيه المستخدم إلى صفحة أخرى بعد تسجيل الدخول
+    } else {
+        alert("فشل تسجيل الدخول. يرجى التحقق من اسم المستخدم وكلمة المرور.");
+    }
+}
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2 class="log">Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+    <div class="img">
+        <img src="background.png" alt="Photo">
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>

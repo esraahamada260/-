@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up Page</title>
+    <style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #F2F1EB;
+    color: #527853;
+}
+
+.signup-container {
+    background-color: #AFC8AD;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #EE7214;
+    text-align: center;
+    
+}
+.signup-container .sign {
+    font-weight: 800;
+    color: #F2F1EB;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+    
+}
+
+label {
+    margin-bottom: 8px;
+    color: #527853;
+    font-weight: 700;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color:#F2F1EB ;
+    border-radius: 10px;
+    border: #527853;
+
+}
+
+button {
+    background-color: #EE7214;
+    color: #EEE7DA;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+    </style>
+    <script>
+        function signup() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+
+    // التحقق من مطابقة كلمة المرور
+    if (password !== confirmPassword) {
+        alert("كلمة المرور غير متطابقة!");
+        return;
+    }
+
+    // يمكنك أضافة المزيد من التحقق هنا، مثل التحقق من صحة البريد الإلكتروني، إلخ.
+
+    alert("تم التسجيل بنجاح!");
+    // يمكنك هنا توجيه المستخدم إلى صفحة تسجيل الدخول أو أي صفحة أخرى
+}
+
+    </script>
+</head>
+<body>
+    <div class="signup-container">
+        <h2 class="sign">Sign Up</h2>
+        <form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="number" >Phone Number</label>
+            <input type="number" id="number" name="phone number" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="button" onclick="signup()">Sign Up</button>
+        </form>
+    </div>
+     <div class="img">
+        <img src="background.png" alt="Photo">
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
